@@ -12,6 +12,7 @@ module:
   contextual: 0
   datetime: 0
   dblog: 0
+  devel: 0
   dynamic_page_cache: 0
   editor: 0
   field: 0
@@ -25,6 +26,7 @@ module:
   menu_ui: 0
   migrate: 0
   migrate_drupal: 0
+  migrate_drupal_ui: 0
   migrate_plus: 0
   migrate_upgrade: 0
   node: 0
