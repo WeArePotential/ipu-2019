@@ -8,6 +8,9 @@ workflows:
       - type: webphp
         description: Import configuration from .yml files
         script: private/scripts/drush_config_import/drush_config_import.php
+      - type: webphp
+        description: Enable modules
+        script: private/scripts/enable_modules/enable_modules.php
 
 protected_web_paths:
   - /private
