@@ -2,3 +2,9 @@
 # For more information, see: https://pantheon.io/docs/pantheon-yml/
 api_version: 1
 
+workflows:
+  deploy:
+    after:
+      - type: webphp
+        description: Import configuration from .yml files
+        script: private/scripts/drush_config_import/drush_config_import.php
