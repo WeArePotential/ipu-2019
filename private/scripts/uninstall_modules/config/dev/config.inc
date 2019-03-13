@@ -1,5 +1,6 @@
 <?php
 
 $config = array(
-  'google_analytics',
+    'google_analytics',
+
 );

@@ -1,7 +1,10 @@
 <?php
 
 $config = array(
-  'devel',
-  'kint',
-  'update'
+    'devel',
+    'field_ui',
+    'module_filter',
+    'kint',
+    'update',
+    'view_ui'
 );
