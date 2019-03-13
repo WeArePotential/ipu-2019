@@ -13,6 +13,7 @@ $config = array(
     'content_translation',
     'ctools',
     'devel',
+    'imagemagick',
     'kint',
     'language',
     'module_filter',
