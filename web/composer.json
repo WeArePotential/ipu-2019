@@ -7,7 +7,11 @@
         "composer/installers": "^1.0.24",
         "wikimedia/composer-merge-plugin": "^1.4",
         "pantheon-systems/terminus": "^2.0",
-        "drupal/core": "^8.6"
+        "drupal/core": "^8.6",
+        "drupal/token": "^1.5",
+        "drupal/bootstrap": "^3.17",
+        "drupal/adminimal_theme": "^1.4",
+        "drupal/adminimal_admin_toolbar": "^1.9"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
