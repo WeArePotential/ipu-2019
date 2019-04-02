@@ -16,6 +16,11 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  */
 include __DIR__ . "/settings.pantheon.php";
 
+// Config directory outside of the webroot.
+$config_directories = [
+    CONFIG_SYNC_DIRECTORY => dirname(DRUPAL_ROOT) . '/config/sync',
+];
+
 /**
  * If there is a local settings file, then include it
  */
