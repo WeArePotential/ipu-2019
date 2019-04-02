@@ -4,7 +4,7 @@
  * Configure modules.
  */
 
-$config_directory = 'sites/default/config';
+$config_directory = '';
 
 if (defined('PANTHEON_ENVIRONMENT')) {
 

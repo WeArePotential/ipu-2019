@@ -10,6 +10,7 @@ $config = array(
     'admin_toolbar_tools',
     'admin_toolbar_content_languages',
     'adminimal_admin_toolbar',
+    'bootstrap',
     'content_translation',
     'ctools',
     'devel',
