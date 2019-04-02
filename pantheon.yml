@@ -8,14 +8,14 @@ workflows:
     after:
       - type: webphp
         description: Import configuration from .yml files
-        script: private/scripts/import_config/import_config.php
+        script: web/private/scripts/import_config/import_config.php
       - type: webphp
         description: Enable modules
-        script: private/scripts/enable_modules/enable_modules.php
+        script: web/private/scripts/enable_modules/enable_modules.php
       - type: webphp
         description: Clear cache
-        script: private/scripts/clear_cache/clear_cache.php
+        script: web/private/scripts/clear_cache/clear_cache.php
 
 protected_web_paths:
-  - /private
+  - /web/private
 
