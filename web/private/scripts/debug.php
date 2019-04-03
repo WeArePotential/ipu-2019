@@ -1,6 +1,6 @@
 <?php
 
-echo "Quicksilver Debuging Output - WAP 2";
+echo "Quicksilver Debuging Output - WAP 3";
 echo "\n\n";
 echo "\n========= START PAYLOAD ===========\n";
 print_r($_POST);
