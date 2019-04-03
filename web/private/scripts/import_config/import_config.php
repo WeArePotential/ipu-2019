@@ -21,10 +21,10 @@ if (defined('PANTHEON_ENVIRONMENT')) {
   }
 }
 
-if (!empty($config_directory)) {
+//if (!empty($config_directory)) {
   //passthru("drush cim --partial --source=$config_directory --yes");
     passthru("drush cim  --yes");
-}
+//}
 
 // Confirmation for Terminus.
 echo('Configuration imported.' . "\n");
