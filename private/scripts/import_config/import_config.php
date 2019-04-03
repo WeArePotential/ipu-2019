@@ -21,6 +21,9 @@ if (defined('PANTHEON_ENVIRONMENT')) {
   }
 }
 
+/* Always import all config for now.
+ *We can split this out later on
+ */
 //if (!empty($config_directory)) {
   //passthru("drush cim --partial --source=$config_directory --yes");
     passthru("drush cim  --yes");
