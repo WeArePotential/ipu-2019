@@ -26,7 +26,8 @@ if (defined('PANTHEON_ENVIRONMENT')) {
  */
 //if (!empty($config_directory)) {
   //passthru("drush cim --partial --source=$config_directory --yes");
-    passthru("drush cim  --yes");
+    passthru('drush cset "system.site" uuid "e68855ce-257f-41af-9a61-51f6fc1116ef"');
+    passthru('drush cim  --yes');
 //}
 
 // Confirmation for Terminus.
