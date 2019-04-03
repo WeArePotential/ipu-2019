@@ -1,11 +1,11 @@
 uuid: 2c912f15-aef8-4cd2-937f-454e871ca4b7
 name: 'Inter-Parliamentary Union'
 mail: peter@wearepotential.org
-slogan: ''
+slogan: 'Strengthening democracies'
 page:
   403: ''
   404: ''
-  front: /node
+  front: /node/1
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en
