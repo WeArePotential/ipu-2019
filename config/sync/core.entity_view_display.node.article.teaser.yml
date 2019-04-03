@@ -13,6 +13,7 @@ dependencies:
   module:
     - image
     - text
+    - title
     - user
 _core:
   default_config_hash: 4NcL2hSQZBpJbYtNuh5jC6kyQTcAc1m5bQpTegEWEso
@@ -48,6 +49,16 @@ content:
     label: above
   links:
     weight: 100
+    region: content
+  title:
+    type: linked_and_wrapped
+    settings:
+      tag: h2
+      linked: true
+      classes: ''
+    weight: -5
+    label: above
+    third_party_settings: {  }
     region: content
 hidden:
   comment: true
