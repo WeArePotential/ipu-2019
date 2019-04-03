@@ -8,13 +8,13 @@ workflows:
     after:
       - type: webphp
         description: Import configuration from .yml files
-        script: web/private/scripts/import_config/import_config.php
+        script: private/scripts/import_config/import_config.php
       - type: webphp
         description: Enable modules
-        script: web/private/scripts/enable_modules/enable_modules.php
+        script: private/scripts/enable_modules/enable_modules.php
       - type: webphp
         description: Clear cache
-        script: web/private/scripts/clear_cache/clear_cache.php
+        script: private/scripts/clear_cache/clear_cache.php
       - type: webphp
         description: Dump debugging output
         script: private/scripts/debug.php
