@@ -15,6 +15,9 @@ workflows:
       - type: webphp
         description: Clear cache
         script: web/private/scripts/clear_cache/clear_cache.php
+      - type: webphp
+        description: Dump debugging output
+        script: web/private/scripts/debug.php
 
 # Temp remove
 # protected_web_paths:
