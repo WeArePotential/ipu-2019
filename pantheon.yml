@@ -20,5 +20,5 @@ workflows:
         script: web/private/scripts/debug.php
 
 protected_web_paths:
-  - /web/private
+  - /private
 
