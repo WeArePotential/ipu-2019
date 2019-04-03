@@ -1,4 +1,4 @@
-uuid: be94e5aa-59ad-4e13-920e-8e7d75e65b29
+uuid: 2076af57-3014-422d-b150-ba2a08b1a766
 langcode: en
 status: true
 dependencies:
@@ -81,9 +81,4 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  url_redirects:
-    weight: 50
-    settings: {  }
-    third_party_settings: {  }
-    region: content
 hidden: {  }

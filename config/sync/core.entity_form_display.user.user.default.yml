@@ -1,4 +1,4 @@
-uuid: c974563b-1ac4-43e2-8fb2-e92fde3dab10
+uuid: ff64df22-20e2-452d-ad43-85a3da25c30b
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,6 @@ dependencies:
     - image.style.thumbnail
   module:
     - image
-    - path
     - user
 _core:
   default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
@@ -25,12 +24,6 @@ content:
   language:
     weight: 0
     region: content
-  path:
-    type: path
-    weight: 30
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   timezone:
     weight: 6
     region: content

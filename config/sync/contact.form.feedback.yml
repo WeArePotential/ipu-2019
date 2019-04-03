@@ -1,4 +1,4 @@
-uuid: a7a624f3-725e-4548-b463-ebfd4b348f8d
+uuid: 0883f0ae-a45e-44ea-a0b1-993a77cf4292
 langcode: en
 status: true
 dependencies: {  }
@@ -7,7 +7,7 @@ _core:
 id: feedback
 label: 'Website feedback'
 recipients:
-  - pmasonhome@gmail.com
+  - peter@wearepotential.org
 reply: ''
 weight: 0
 message: 'Your message has been sent.'
