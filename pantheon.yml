@@ -16,6 +16,6 @@ workflows:
         description: Clear cache
         script: web/private/scripts/clear_cache/clear_cache.php
 
-protected_web_paths:
-  - /web/private
+# protected_web_paths:
+#   - /web/private
 
