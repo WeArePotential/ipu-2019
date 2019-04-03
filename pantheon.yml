@@ -15,10 +15,12 @@ workflows:
       - type: webphp
         description: Clear cache
         script: private/scripts/clear_cache/clear_cache.php
-      - type: webphp
-        description: Dump debugging output
-        script: private/scripts/debug.php
+      #- type: webphp
+      #  description: Dump debugging output
+      #  script: private/scripts/debug.php
+
 
 #protected_web_paths:
+# Don't protect the scripts - this is done by Pantheon and would stop webphp from running
 #  - /private
 
