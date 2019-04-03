@@ -21,6 +21,20 @@ $config_directories = [
     CONFIG_SYNC_DIRECTORY => dirname(DRUPAL_ROOT) . '/config/sync',
 ];
 
+// Use development config in dev environments.
+if ( isset($_ENV['PANTHEON_ENVIRONMENT']) ) {
+    switch ($_ENV['PANTHEON_ENVIRONMENT']) {
+        case 'live':
+        case 'test':
+            $config['config_split.config_split.config_dev']['status'] = FALSE;
+            break;
+        case 'dev':
+            $config['config_split.config_split.config_dev']['status'] = TRUE;
+    }
+} else {
+    $config['config_split.config_split.config_dev']['status'] = TRUE;
+}
+
 /**
  * If there is a local settings file, then include it
  */
