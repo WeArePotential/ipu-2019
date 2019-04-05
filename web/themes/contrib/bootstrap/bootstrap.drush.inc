@@ -60,7 +60,7 @@ function _drush_bootstrap_generate_docs_settings(Theme $bootstrap) {
   $output[] = '<!-- @ingroup -->';
   $output[] = '# Theme Settings';
   $output[] = '';
-  $output[] = 'To override a setting, open `./config/install/THEMENAME.settings.yml` and add the following:';
+  $output[] = 'To override a setting, open `./config/install/ipu.settings.yml` and add the following:';
   $output[] = '';
   $output[] = '```yaml';
   $output[] = '# Settings';

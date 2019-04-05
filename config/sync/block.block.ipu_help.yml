@@ -1,0 +1,22 @@
+uuid: a3f4d944-a143-4091-9f4b-0eb641e1ba1e
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - ipu
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: ipu_help
+theme: ipu
+region: help
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }
