@@ -1,25 +1,25 @@
-language: ruby
-cache: bundler
-bundler_args: --path ../../vendor/bundle --without debug
-rvm:
-  - 2.2.3
-gemfile:
-  - test/gemfiles/rails_head.gemfile
-  - test/gemfiles/sass_3_3.gemfile
-  - test/gemfiles/sass_3_4.gemfile
-  - test/gemfiles/sass_head.gemfile
-before_install:
-  - "nvm install stable"
-  - "npm install"
-matrix:
-  allow_failures:
-    - gemfile: test/gemfiles/rails_head.gemfile
-    - gemfile: test/gemfiles/sass_head.gemfile
-notifications:
-  slack: heybb:3n88HHilXn76ji9vV4gL819Y
-env:
-  global:
-  - VERBOSE=1
+addons:
+  chrome: stable
+language: node_js
+git:
+  depth: 3
+node_js:
+  - "6"
+  - "8"
+install:
+  - bundle install --deployment --jobs=3 --retry=3 --clean
+  - npm install
+before_script:
+  - google-chrome-stable --product-version
 script:
-  bundle exec rake && sh test/*.sh
-sudo: false
+  - npm test || travis_terminate 1
+  - if [[ "$TRAVIS_NODE_VERSION" = "8" ]]; then npm run check-broken-links; fi
+  - if [[ "$TRAVIS_NODE_VERSION" = "8" && "$TRAVIS_EVENT_TYPE" = "push" && ! `git log --format=%B --no-merges -n 1 | grep '\[skip browser\]'` ]]; then npm run js-test-cloud; fi
+after_success:
+  - if [[ "$TRAVIS_NODE_VERSION" = "8" ]]; then npm run coveralls; fi
+cache:
+  directories:
+    - node_modules
+    - vendor/bundle
+notifications:
+  email: false
