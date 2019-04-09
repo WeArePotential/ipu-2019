@@ -1,0 +1,22 @@
+uuid: 8a989b8d-d68a-4170-9fe9-cbae6aadb527
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - ipu_sass
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: ipu_sass_help
+theme: ipu_sass
+region: footer_fourth
+weight: -6
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

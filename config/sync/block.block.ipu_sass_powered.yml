@@ -1,0 +1,22 @@
+uuid: fd80b512-9c82-4f12-ba99-c7008ea5a181
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ipu_sass
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: ipu_sass_powered
+theme: ipu_sass
+region: footer_third
+weight: -6
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

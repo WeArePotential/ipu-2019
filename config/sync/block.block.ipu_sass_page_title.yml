@@ -1,0 +1,20 @@
+uuid: 723aa451-8085-4f3c-bd89-1dccf5e2d442
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ipu_sass
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: ipu_sass_page_title
+theme: ipu_sass
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }
