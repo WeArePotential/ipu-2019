@@ -1,6 +1,12 @@
 /* VARIABLES */
 
 // colors
+$ipu-blue: #0066A1;
+$ipu-grey: #747678;
+$ipu-white: #ffffff;
+$ipu-greenblue: #00a8b4;
+$ipu-black: #252C26;
+
 $primary-shade: #A8CF45;
 $primary-light: lighten($primary-shade, 37%);
 $primary-dark: darken($primary-shade, 12%);
@@ -24,10 +30,15 @@ $brand-inverse: $primary-shade;
 // Body
 //
 // Settings for the `<body>` element.
-//$body-bg: $white;
-//$body-color: $gray-dark;
+$body-bg: $ipu-white;
+$body-color: $ipu-black;
+
 $inverse-bg: $primary-shade;
 //$inverse-color: $gray-lighter;
+
+$brand-primary: $ipu-blue;
+$brand-inverse: $ipu-greenblue;
+
 // Links
 //
 // Style anchor elements.
