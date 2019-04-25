@@ -1,23 +1,43 @@
 /* VARIABLES */
 
+// breakpoints
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1900px
+);
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1610px
+);
+
 // colors
 $ipu-blue: #0066A1;
 $ipu-grey: #747678;
 $ipu-white: #ffffff;
-$ipu-greenblue: #00a8b4;
+$ipu-teal: #00a8b4;
 $ipu-black: #252C26;
+$ipu-orange: #E98300;
+$ipu-brown: #703D29;
 
-$primary-shade: #A8CF45;
+$primary-shade: $ipu-orange; //#A8CF45;
 $primary-light: lighten($primary-shade, 37%);
 $primary-dark: darken($primary-shade, 12%);
-$accent-shade: #0079C0;
+$accent-shade: $ipu-teal; //#0079C0; e.g. button or hyperlink
 $accent-light: lighten($accent-shade, 37%);
 $accent-dark: darken($accent-shade, 12%);
 // Reassign color vars to semantic color scheme
-$red: #dc3545;
-$yellow: #ffc107;
+$red: $ipu-orange; // #dc3545;
+$yellow: lighten($ipu-orange, 50%); // #ffc107;
 $green: #28a745;
-$cyan: #17a2b8;
+$cyan: $ipu-teal; //#17a2b8;
 $gray-100: #f8f9fa !default;
 $gray-800: #343a40 !default;
 $theme-colors: ( primary: $accent-shade, secondary: $primary-shade, success: $green, info: $cyan, warning: $yellow, danger: $red, light: $gray-100, dark: $gray-800);
@@ -37,7 +57,7 @@ $inverse-bg: $primary-shade;
 //$inverse-color: $gray-lighter;
 
 $brand-primary: $ipu-blue;
-$brand-inverse: $ipu-greenblue;
+$brand-inverse: $ipu-teal;
 
 // Links
 //
